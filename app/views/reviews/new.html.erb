@@ -1,4 +1,4 @@
-<%= simple_form_for(@restaraunt) do |f| %>
+<%= simple_form_for [@review,@restaurant] do |f| %>
   <%= f.input :rating %>
   <%= f.input :content %>
   <%= f.submit %>
