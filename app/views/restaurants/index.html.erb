@@ -1,0 +1,12 @@
+<div class="container">
+  <h1> Welcome to Yelpers</h1>
+  <p> Your favorite restaurants and their reviews</p>
+  <br>
+  <%@restaurants.each do |restaurant| %>
+    <%=link_to restaurant.name, restaurant_path(restaurant)%>
+    <br>
+    <br>
+  <%end%>
+
+
+</div>
