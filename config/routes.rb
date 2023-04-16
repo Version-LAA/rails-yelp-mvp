@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # post "/restaurants", to: "restaurants#create"
 
   resources :restaurants do
-    resources :reviews, only: [:new]
+    resources :reviews, only: [:create]
   end
 
 

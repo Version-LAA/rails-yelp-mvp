@@ -4,4 +4,15 @@
 <p>Phone Number: <%=@restaurant.phone_number%></p>
 <p>Type: <%=@restaurant.category%></p>
 
-<%=link_to "create a review", new_restaurant_review_path(@restaurant)%>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-4">
+      <h4>Leave a review</h4>
+      <%= simple_form_for [@restaurant, @review] do |f| %>
+        <%= f.input :rating %>
+        <%= f.input :content, placeholder: 'Write your review here' %>
+        <%= f.submit 'Review!', class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
