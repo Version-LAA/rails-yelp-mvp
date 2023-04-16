@@ -11,7 +11,6 @@ class RestaurantsController < ApplicationController
       'https://images.unsplash.com/photo-1547584370-2cc98b8b8dc8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2371&q=80'
     ]
     @restaurants = Restaurant.all
-
   end
 
   def show

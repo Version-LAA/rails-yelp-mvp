@@ -2,9 +2,6 @@
 <p><%=@restaurant.address%></p>
 <br>
 <p>Phone Number: <%=@restaurant.phone_number%></p>
-<p>Food Type: <%=@restaurant.category%></p>
+<p>Type: <%=@restaurant.category%></p>
 
-<br>
-<h3>Restaurants Reviews</h3>
-
-<%=link_to "create a review", reviews_new_path(@restaurant)%>
+<%=link_to "create a review", new_restaurant_review_path(@restaurant)%>
